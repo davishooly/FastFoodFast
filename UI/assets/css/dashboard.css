@@ -1,0 +1,119 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* navigation */
+
+.navigation {
+    background: linear-gradient(rgb(43, 161, 165), rgb(56, 169, 173));
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    position: relative;
+    top: 48%;
+    padding: 1rem;
+}
+
+.nav__heading,
+.navs,
+.copyright {
+    color: white;
+    padding: 1rem;
+}
+
+.navs {
+    text-decoration: none;
+}
+
+.navs:hover {
+    background: rgb(214, 149, 27);
+    ;
+}
+
+
+/* form */
+
+.food-orders {
+    text-align: center;
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    height: 3rem;
+    color: white;
+    box-shadow: 1px 1px 1px rgb(134, 134, 134);
+}
+
+.food-orders-containers {
+    margin: 0.7rem;
+    flex: 1 1 30%;
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    box-shadow: 2px 2px 2px gray;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.list__containers {
+    margin: 3rem 0 0 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 120vh;
+}
+
+.rows {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: .8px .8px .8px .8px rgb(158, 158, 158);
+    color: black;
+}
+
+.flex__item {
+    margin: 1rem;
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.description_header {
+    padding-bottom: 0.4rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+
+/* Working with buttons */
+
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-top: 8px;
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn-blue {
+    border: 1px solid greenyellow;
+    background-color: green;
+    color: #fff;
+}
+
+.btn-orange {
+    border: 1px solid orangered;
+    background-color: orange;
+    color: #fff;
+    width: 7.8rem;
+    text-align: start;
+}

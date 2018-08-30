@@ -12,12 +12,6 @@
     flex-direction: column;
 }
 
-.copyright {
-    position: relative;
-    top: 48%;
-    padding: 1rem;
-}
-
 .nav__heading,
 .navs,
 .copyright {
@@ -31,7 +25,6 @@
 
 .navs:hover {
     background: rgb(214, 149, 27);
-    ;
 }
 
 
@@ -56,7 +49,7 @@
     border-radius: 10px;
 }
 
-.list__containers {
+.order__container {
     margin: 3rem 0 0 10rem;
     display: flex;
     flex-direction: column;
@@ -70,14 +63,14 @@
     color: black;
 }
 
-.flex__item {
+.food__item {
     margin: 1rem;
     flex: 1;
     font-size: 1rem;
     font-weight: 300;
 }
 
-.description_header {
+.desc_header {
     padding-bottom: 0.4rem;
     font-weight: 700;
     background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));

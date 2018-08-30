@@ -117,3 +117,10 @@
     width: 7.8rem;
     text-align: start;
 }
+
+.btn-orange-small {
+    border: 1px solid orangered;
+    background-color: orange;
+    color: #fff;
+    text-align: start;
+}

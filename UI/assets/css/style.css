@@ -131,11 +131,8 @@ a:hover {
 }
 
 .new-account-small {
-    font-weight: 300;
+    font-weight: 400;
     word-spacing: 4px;
-    background-image: linear-gradient(to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 

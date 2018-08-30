@@ -106,6 +106,30 @@ a:hover {
 }
 
 
+
+/* main section for singup */
+
+.form-sec {
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    height: 20rem;
+    border-radius: 3px;
+    box-shadow: 0 .2rem .5rem black;
+    padding: 2rem 0 2rem 6rem;
+}
+
+
+/* section login Forms */
+
+.new-account {
+    font-weight: 300;
+    word-spacing: 4px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
+    -webkit-background-clip: text;
+    color: transparent;
+}
 /* section 1 Forms */
 
 .login {
@@ -278,32 +302,10 @@ input {
 
 .meals-menu li {
     display: block;
-    float: left;
     width: 25%;
     margin-top: 10px;
 }
 
-.meals-photo {
-    width: 100%;
-    border: 1px solid orange;
-    border-radius: 6px;
-    margin: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-.meals-photo img {
-    opacity: 0.7;
-    width: 100%;
-    object-fit: cover;
-    transform: scale(1.15);
-    transition: transform 0.5s;
-}
-
-.meals-photo img:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
 
 .hero {
     padding: 0 20px 0 0;
@@ -346,7 +348,6 @@ input {
 
 .social-icons {
     margin-top: 40px;
-    float: right;
     list-style: none;
 }
 

@@ -12,6 +12,7 @@
     content: '.';
     clear: both;
     visibility: hidden;
+    display: table;
 }
 
 html,
@@ -247,9 +248,9 @@ input {
 .row-2 {
     padding: 4rem;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     border-radius: 3px;
+    flex: 0 1 auto;
     height: auto;
     text-align: center;
     transition: all .3s;

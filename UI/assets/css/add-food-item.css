@@ -1,0 +1,41 @@
+.add-food__form {
+    position: relative;
+    left: 35vh;
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgb(116, 111, 111);
+    width: 50vw;
+    height: 78vh;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+input {
+    font-size: .7rem;
+}
+
+label {
+    display: block;
+    margin: .8rem;
+    padding: .2rem;
+    font-size: 1rem;
+}
+
+input {
+    width: 30vw;
+    border: 0;
+    outline: 0;
+    text-align: justify;
+    border-bottom: 1px solid black;
+}
+
+label {
+    font-weight: 400;
+    word-spacing: 4px;
+    background-image: linear-gradient(to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.add {
+    margin-top: 1.5rem;
+}

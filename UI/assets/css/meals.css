@@ -1,0 +1,47 @@
+/* clear fix for inconsicitent heights */
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* meals section */
+
+.meals-section {
+    padding: 2rem;
+}
+
+.meals {
+    list-style: none;
+    width: 100%;
+}
+
+.meals li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: .3rem;
+}
+
+.meals-image {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    border-radius: .3rem;
+}
+
+.meals-image img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+}

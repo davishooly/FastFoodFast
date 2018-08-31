@@ -1,4 +1,4 @@
-/* clear fix for inconsicitent heights */
+/* meals section */
 
 .clearfix {
     zoom: 1;
@@ -12,8 +12,21 @@
     visibility: hidden;
 }
 
+.user {
+    padding: 0px 80px 80px 80px;
+}
 
-/* meals section */
+.menu-big {
+    font-weight: 300;
+    word-spacing: 4px;
+    margin: 2rem 0 2rem 0;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 .meals-section {
     padding: 2rem;
@@ -29,6 +42,48 @@
     float: left;
     width: 25%;
     padding: .3rem;
+}
+
+.meals-user {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-user li {
+    width: 50%;
+    float: left;
+}
+
+.align {
+    display: flex;
+}
+
+.column-left {
+    padding: 1rem;
+    text-align: center;
+}
+
+.column-left p {
+    font-size: .8rem;
+}
+
+.margintop {
+    margin-top: 40px;
+}
+
+.image-meals {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    border-radius: .3rem;
+}
+
+.image-meals img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
 }
 
 .meals-image {

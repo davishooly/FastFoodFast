@@ -16,11 +16,6 @@
 <body>
     <header>
         <nav>
-            <div class="main-nav ">
-                <li>
-                    <a href="../index.html">home</a>
-                </li>
-            </div>
             <div class="main-nav left">
                 <li>
                     <a href="dashboard.html">Dashboard</a>
@@ -28,7 +23,7 @@
             </div>
         </nav>
     </header>
-    <section>
+    <section class="section-signup">
         <div class="new-account">
             Add food
         </div>
@@ -37,6 +32,8 @@
             <input type="text" id="name" placeholder="Enter food name" required>
             <label for="description">Description</label>
             <input type="text" id="destination" placeholder="Enter food description" required>
+            <label>Select food image</label>
+            <input type="file" placeholder="choose image" riquired>
             <label>Price</label>
             <input type="number" min="200" step="50" placeholder="Enter price" required>
             <label for="datetime">Date and time</label>

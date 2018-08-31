@@ -60,6 +60,20 @@
     }
 }
 
+@media only screen and (max-width: 375px) {
+    #contacts {
+        height: 42vh;
+        width: 110vw;
+    }
+    .history__container {
+        width: 100vw;
+        margin-left: 2px;
+    }
+    .add-food__form {
+        left: 0vh;
+    }
+}
+
 @media only screen and (max-width: 300px) {
     #contacts {
         height: 42vh;

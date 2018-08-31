@@ -1,0 +1,38 @@
+.history__container {
+    margin: 1rem 0 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-orders {
+    text-align: center;
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    height: 3rem;
+    color: white;
+    box-shadow: 1px 1px 1px rgb(134, 134, 134);
+}
+
+.food-orders-containers {
+    margin: 0.7rem;
+    flex: 1 1 30%;
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    box-shadow: 2px 2px 2px gray;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.rows {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: .8px .8px .8px .8px rgb(158, 158, 158);
+    color: black;
+}
+
+.food__item {
+    margin: 1rem;
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 400;
+}

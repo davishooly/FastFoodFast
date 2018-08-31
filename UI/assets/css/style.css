@@ -58,6 +58,11 @@ a:hover {
     color: orange;
 }
 
+.left {
+    float: left;
+    margin-left: 60px;
+}
+
 .top {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/5.jpg);
     height: 50vh;
@@ -145,11 +150,6 @@ a:hover {
 .alert {
     animation: moveInLeft 1s ease-out .75s;
     animation-fill-mode: backwards;
-}
-
-.forms {
-    width: 100%;
-    margin-top: 20px;
 }
 
 .reminder {
@@ -285,17 +285,6 @@ input {
 .desc p {
     font-size: .8rem;
     font-weight: 300;
-}
-
-
-/* sections meals menu */
-
-.section-menus {
-    background: #f4f4f4;
-}
-
-.hero {
-    padding: 0 20px 0 0;
 }
 
 

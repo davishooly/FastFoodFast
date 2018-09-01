@@ -12,6 +12,7 @@
     content: '.';
     clear: both;
     visibility: hidden;
+    display: table;
 }
 
 html,
@@ -127,6 +128,7 @@ a:hover {
 .new-account {
     font-weight: 300;
     word-spacing: 4px;
+    margin-bottom: 1rem;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -185,6 +187,10 @@ a:hover {
 
 section {
     padding: 80px;
+}
+
+.section-signup {
+    padding: 20px;
 }
 
 input[type="password"],
@@ -247,9 +253,9 @@ input {
 .row-2 {
     padding: 4rem;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     border-radius: 3px;
+    flex: 0 1 auto;
     height: auto;
     text-align: center;
     transition: all .3s;

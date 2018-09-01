@@ -1,18 +1,45 @@
 /* big tablets */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    #contacts {
+        height: 28vh;
+    }
+    body {
+        width: 100vw;
+    }
+    .add-food__form {
+        left: 20vh;
+    }
+}
 
 
 /* big tablets */
 
-@media only screen and (max-width: 1023px) {}
+@media only screen and (max-width: 1023px) {
+    .row-2 {
+        width: 900px;
+    }
+    #contacts {
+        height: 31vh;
+    }
+    .add-food__form {
+        left: 20vh;
+    }
+}
 
 
 /*  small tablets */
 
 @media only screen and (max-width: 767px) {
     #contacts {
-        height: 26vh;
+        height: 37vh;
+    }
+    .history__container {
+        width: 100%;
+        margin-left: 30px;
+    }
+    .add-food__form {
+        left: 9vh;
     }
 }
 
@@ -22,5 +49,41 @@
 @media only screen and (max-width: 480px) {
     #contacts {
         height: 38vh;
+        width: 52vh;
+    }
+    .history__container {
+        width: 36vh;
+        padding: 0 1rem 0 0;
+    }
+    .add-food__form {
+        left: 4vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #contacts {
+        height: 42vh;
+        width: 110vw;
+    }
+    .history__container {
+        width: 100vw;
+        margin-left: 2px;
+    }
+    .add-food__form {
+        left: 0vh;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #contacts {
+        height: 42vh;
+        width: 60vw;
+    }
+    .history__container {
+        width: 36vh;
+        padding: 0 1rem 0 0;
+    }
+    .add-food__form {
+        left: 0vh;
     }
 }

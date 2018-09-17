@@ -1,8 +1,13 @@
 .dashboard {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
+aside {
+    display: flex;
+    height: 100%;
+}
 
 /* navigation */
 
@@ -10,6 +15,7 @@
     background: linear-gradient(rgb(43, 161, 165), rgb(56, 169, 173));
     display: flex;
     flex-direction: column;
+    height: 120vh;
 }
 
 .nav__heading,
@@ -25,14 +31,14 @@
 
 .navs:hover {
     background: rgb(214, 149, 27);
+    color: #ffff;
 }
-
 
 /* form */
 
 .food-orders {
     text-align: center;
-    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    background-image: linear-gradient( to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
     padding: 0.5rem;
     font-size: 1.3rem;
     height: 3rem;
@@ -43,24 +49,17 @@
 .food-orders-containers {
     margin: 0.7rem;
     flex: 1 1 30%;
-    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    background-image: linear-gradient( to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
     box-shadow: 2px 2px 2px gray;
     padding: 1rem;
     border-radius: 10px;
 }
 
 .order__container {
-    margin: 1rem 0 0 3rem;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    width: 120vh;
-}
-
-.rows {
-    display: flex;
-    justify-content: flex-start;
-    box-shadow: .8px .8px .8px .8px rgb(158, 158, 158);
-    color: black;
+    width: 100%;
 }
 
 .food__item {
@@ -73,12 +72,11 @@
 .desc_header {
     padding-bottom: 0.4rem;
     font-weight: 700;
-    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    background-image: linear-gradient( to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
     -webkit-background-clip: text;
     text-transform: uppercase;
     color: transparent;
 }
-
 
 /* Working with buttons */
 
@@ -87,20 +85,28 @@
     text-decoration: none;
     padding: 8px 20px;
     margin-top: 8px;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     border-radius: 5px;
 }
 
 .btn:hover {
     transform: translateY(-3px);
     color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-blue {
     border: 1px solid greenyellow;
     background-color: green;
     color: #fff;
+}
+
+.btn-accept {
+    color: green;
+}
+
+.btn-reject {
+    color: orange;
 }
 
 .btn-orange {
@@ -116,4 +122,55 @@
     background-color: orange;
     color: #fff;
     text-align: start;
+}
+
+/* Navigation bar */
+
+header {
+    display: flex;
+    height: 10vh;
+    width: 100% !important;
+    border-bottom: 1px solid rgb(43, 161, 165);
+    padding-left: 30px;
+    justify-content: flex-end;
+}
+
+/*  main nav*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 25px 0px;
+    margin-right: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+.main-nav i {
+    color: rgb(43, 161, 165);
+    font-size: 15px;
+}
+
+i:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+main {
+    width: 100%;
+}
+
+.dashboard__content {
+    padding: 15px;
+}
+
+.accept_order i {
+    padding: 8px;
+    font-size: 22px;
+    margin-left: 1.5rem;
 }

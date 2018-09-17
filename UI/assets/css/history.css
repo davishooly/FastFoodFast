@@ -8,7 +8,8 @@
     text-align: center;
     background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    word-spacing: 5px;
     height: 3rem;
     color: white;
     box-shadow: 1px 1px 1px rgb(134, 134, 134);
@@ -22,7 +23,8 @@
 }
 
 .history__item {
-    margin: 1rem;
+    /* margin: 1rem; */
+    padding: 18px;
     flex: 1;
     font-size: 1rem;
     font-weight: 400;

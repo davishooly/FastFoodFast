@@ -1,5 +1,20 @@
 /* big tablets */
 
+@media only screen and (max-width: 2652px) {
+    #contacts {
+        height: 26.5vh;
+    }
+}
+
+@media only screen and (max-width: 2326px) {
+    .add-food__form {
+        height: 105vh;
+    }
+    .margintop {
+        margin-top: 0px;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     #contacts {
         height: 28vh;
@@ -10,8 +25,56 @@
     .add-food__form {
         left: 20vh;
     }
+    footer p,
+    a {
+        font-size: 24px;
+    }
+    .row-2 {
+        padding: 4rem;
+        display: block;
+        border-radius: 3px;
+        height: auto;
+        text-align: center;
+        transition: all 0.3s;
+    }
+    .col-4 {
+        width: 600px;
+        padding: 4rem;
+        margin-bottom: 3rem;
+    }
+    #contacts {
+        display: block;
+    }
+    .history__container {
+        padding: 2rem;
+    }
+    .margintop {
+        margin-top: 0px;
+    }
 }
 
+@media only screen and (max-width: 1053px) {
+    .well {
+        height: 150px;
+    }
+    #contacts {
+        height: 17.5vh;
+    }
+    .add-food__form {
+        left: 12vh;
+        height: 730px;
+        width: 650px;
+    }
+    .navigation {
+        height: 1050px;
+    }
+    .main-nav {
+        margin-top: 30px;
+    }
+    .main-nav i {
+        font-size: 35px;
+    }
+}
 
 /* big tablets */
 
@@ -20,13 +83,23 @@
         width: 900px;
     }
     #contacts {
-        height: 31vh;
+        height: 27.5vh;
     }
     .add-food__form {
-        left: 20vh;
+        left: 12vh;
+        height: 630px;
+        width: 500px;
+    }
+    body {
+        width: 1000px;
+    }
+    #contacts {
+        width: 1000px;
+    }
+    .margintop {
+        margin-top: 0px;
     }
 }
-
 
 /*  small tablets */
 
@@ -39,51 +112,172 @@
         margin-left: 30px;
     }
     .add-food__form {
-        left: 9vh;
+        left: 18vh;
     }
-}
-
-
-/* for small phones*/
-
-@media only screen and (max-width: 480px) {
-    #contacts {
-        height: 38vh;
-        width: 52vh;
+    /* for small phones*/
+    @media only screen and (max-width: 480px) {
+        #contacts {
+            height: 38vh;
+            width: 52vh;
+        }
+        .history__container {
+            width: 100%;
+            padding: 0 1rem 0 0;
+        }
+        .add-food__form {
+            left: 14vh;
+            width: 700px;
+        }
+        body {
+            width: 1000px;
+        }
+        #contacts {
+            width: 1000px;
+        }
+        .desc p {
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+        footer p,
+        a {
+            font-size: 24px;
+        }
+        .col-4 {
+            width: 600px;
+            padding: 4rem;
+            margin-bottom: 3rem;
+        }
+        .row-2 {
+            padding: 4rem;
+            display: block;
+            border-radius: 3px;
+            height: auto;
+            text-align: center;
+            transition: all 0.3s;
+        }
     }
-    .history__container {
-        width: 36vh;
-        padding: 0 1rem 0 0;
+    @media only screen and (max-width: 411px) {
+        body {
+            width: 1000px;
+        }
+        .rows {
+            width: 800px;
+        }
+        .order-history {
+            width: 800px;
+        }
+        .dashboard__content {
+            width: 800px;
+        }
+        .history__container {
+            padding: 2rem;
+            margin-right: 5px;
+        }
+        .add-food__form {
+            left: 18vh;
+            width: 700px;
+        }
+        .main-nav {
+            margin-top: 5px;
+        }
     }
-    .add-food__form {
-        left: 4vh;
+    @media only screen and (max-width: 414px) {
+        body {
+            width: 1000px;
+        }
+        .rows {
+            width: 800px;
+        }
+        .order-history {
+            width: 800px;
+        }
+        .dashboard__content {
+            width: 800px;
+        }
+        .history__container {
+            padding: 2rem;
+            margin-right: 5px;
+        }
+        .add-food__form {
+            left: 18vh;
+            width: 700px;
+        }
+        .main-nav {
+            margin-top: 5px;
+        }
     }
-}
-
-@media only screen and (max-width: 375px) {
-    #contacts {
-        height: 42vh;
-        width: 110vw;
+    @media only screen and (max-width: 375px) {
+        .history__container {
+            width: 100vw;
+            margin-left: 2px;
+        }
+        .add-food__form {
+            left: 0vh;
+        }
+        body {
+            width: 1000px;
+            height: 100%;
+        }
+        header {
+            height: 100px;
+        }
+        .desc p {
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+        #contacts {
+            width: 1000px;
+        }
+        footer p,
+        a {
+            font-size: 24px;
+        }
+        .col-4 {
+            width: 600px;
+            padding: 4rem;
+            margin-bottom: 3rem;
+        }
+        .row-2 {
+            display: block;
+            border-radius: 3px;
+            height: auto;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .rows {
+            width: 750px;
+        }
+        .order-history {
+            width: 750px;
+        }
+        .add-food__form {
+            left: 18vh;
+            width: 700px;
+        }
+        .margintop {
+            margin-top: 0px;
+        }
+        .navigation {
+            height: 930px;
+        }
+        .main-nav {
+            margin-top: 5px;
+        }
+        .main-nav {
+            margin-top: 0px;
+        }
     }
-    .history__container {
-        width: 100vw;
-        margin-left: 2px;
-    }
-    .add-food__form {
-        left: 0vh;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    #contacts {
-        height: 42vh;
-        width: 60vw;
-    }
-    .history__container {
-        width: 36vh;
-        padding: 0 1rem 0 0;
-    }
-    .add-food__form {
-        left: 0vh;
+    @media only screen and (max-width: 300px) {
+        #contacts {
+            height: 42vh;
+            width: 1000px;
+        }
+        .history__container {
+            width: 36vh;
+            padding: 0 1rem 0 0;
+        }
+        .add-food__form {
+            left: 0vh;
+        }
     }
 }

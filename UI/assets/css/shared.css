@@ -9,12 +9,10 @@ body {
     font-family: 'Lato', 'Arial', sans-serif;
     color: white;
 }
-
-
 /* dashboard footer */
 
 .copyright {
     position: relative;
-    top: 40%;
+    top: 30%;
     padding: 1rem;
 }

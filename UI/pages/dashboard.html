@@ -6,108 +6,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fast-Food-Fast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/history.css">
     <link href=" https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 " rel="stylesheet ">
     <link rel="stylesheet" media="screen" href="../assets/css/shared.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/media-queries.css" />
 
 </head>
 
 <body>
-    <section class="dashboard">
-        <div class="navigation">
-            <h1 class="nav__heading">Admin Dashboard</h1>
-            <a class=" navs" href="../index.html">
-                Home
-            </a>
-            <a class=" navs" href="add-food.html">
-                Add food item
-            </a>
-            <a class=" navs" href="food-menu-admin.html">
-                View added food
-            </a>
-            <a class="food__items navs" href="dashboard.html"> views all orders</a>
-            <a class=" navs" href="orders.html">
-                Accepted orders
-            </a>
-            <a class=" navs" href="#">
-                Log Out
-            </a>
-            <div class="copyright">
-                Copyright &copy;2018 by Kimame.
-                <p>All rights reserved.</p>
+    <div class="dashboard">
+        <aside>
+            <div class="navigation">
+                <h1 class="nav__heading">Admin Dashboard</h1>
+                <a class=" navs" href="../index.html">
+                    Home
+                </a>
+                <a class=" navs" href="add-food.html">
+                    Add food item
+                </a>
+                <a class=" navs" href="food-menu-admin.html">
+                    View added food
+                </a>
+                <a class="food__items navs" href="dashboard.html"> views all orders</a>
+                <a class=" navs" href="orders.html">
+                    Accepted orders
+                </a>
+                <a class=" navs" href="#">
+                    Log Out
+                </a>
+                <div class="copyright">
+                    Copyright &copy;2018 by Kimame.
+                    <p>All rights reserved.</p>
+                </div>
             </div>
-        </div>
+        </aside>
 
-        <div>
-            <div class="food-orders-containers">
-                <h3>Delivery:</h3>
-                <p>Upperhill- NHIF building</p>
-                <h3> Time:</h3>
-                <p>29st of August at 11:00 AM</p>
-                <div>
-                    <input type="submit" class="btn btn-blue btn-animated" value="Accept">
-                    <input type="submit" class="btn btn-orange-small btn-animated" value="Reject">
-                </div>
+        <main>
+            <header>
+                <nav>
+                    <div class="main-nav">
+                        <ul>
+                            <li>
+                                <i class="fa fa-search"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-flag"></i>
+                            </li>
 
-            </div>
-            <div class="food-orders-containers">
-                <h3>Delivery:</h3>
-                <p>Upperhill- NHIF building</p>
-                <h3> Time:</h3>
-                <p>29st of August at 11:00 AM</p>
-                <div>
-                    <input type="submit" class="btn btn-blue btn-animated" value="Accept">
-                    <input type="submit" class="btn btn-orange-small btn-animated" value="Reject">
+                            <li>
+                                <i class="fa fa-user-circle"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="dashboard__content">
+                <div class="history__container ">
+                    <div class="order-history">
+                        <p>Customers orders</p>
+                    </div>
+                    <div class="rows">
+                        <div class="history__item desc_header">Meal orders</div>
+                        <div class="history__item desc_header">food</div>
+                        <div class="history__item desc_header ">Date</div>
+                        <div class="history__item desc_header ">Delivery location</div>
+                        <div class="history__item desc_header ">ordered by</div>
+                        <div class="history__item desc_header ">Accept/reject</div>
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">1</div>
+                        <div class="history__item">chips/kuku</div>
+                        <div class="history__item">31-08-2018</div>
+                        <div class="history__item">Upper Hill </br> NHIF building</div>
+                        <div class="history__item">Masha</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">2</div>
+                        <div class="history__item">chips masala</div>
+                        <div class="history__item">29-08-2018</div>
+                        <div class="history__item">
+                            <div>
+                                <p>Lavington</p>
+                                <p> Kirema Street</p>
+                            </div>
+                        </div>
+                        <div class="history__item">Creez</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">3</div>
+                        <div class="history__item">burger</div>
+                        <div class="history__item">21-08-2018</div>
+                        <div class="history__item">
+                            <div>
+                                <p>In hotel reservations</p>
+                                <p> Westlands outlet</p>
+                            </div>
+                        </div>
+                        <div class="history__item">Ogol</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">4</div>
+                        <div class="history__item">hot dog</div>
+                        <div class="history__item">30-07-2018</div>
+                        <div class="history__item">
+                            <div>
+                                <p>In hotel reservations</p>
+                                <p> two rivers outlet</p>
+                            </div>
+                        </div>
+                        <div class="history__item">Leah</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows ">
+                        <div class="history__item">5</div>
+                        <div class="history__item">pizza</div>
+                        <div class="history__item">1-06-2018</div>
+                        <div class="history__item ">
+                            <div>
+                                <p>Afya center</p>
+                                <p> fourth floor</p>
+                            </div>
+                        </div>
+                        <div class="history__item">Maggie</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows ">
+                        <div class="history__item">6</div>
+                        <div class="history__item">kebab</div>
+                        <div class="history__item">27-05-2018</div>
+                        <div class="history__item">
+                            <div>
+                                <p>In hotel reservations</p>
+                                <p> Garden outlet</p>
+                            </div>
+                        </div>
+                        <div class="history__item">Jemo</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div>
-            <div class="food-orders-containers">
-                <h3>Delivery:</h3>
-                <p>JKUAT - Aicad</p>
-                <h3> Time:</h3>
-                <p>31st of August at 1:00 pM</p>
-                <div>
-                    <input type="submit" class="btn btn-blue btn-animated" value="Accept">
-                    <input type="submit" class="btn btn-orange-small btn-animated" value="Reject">
-                </div>
-            </div>
-            <div class="food-orders-containers">
-                <h3>Delivery:</h3>
-                <p>Upperhill- NHIF building</p>
-                <h3> Time:</h3>
-                <p>29st of August at 11:00 AM</p>
-                <div>
-                    <input type="submit" class="btn btn-blue btn-animated" value="Accept">
-                    <input type="submit" class="btn btn-orange-small btn-animated" value="Reject">
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="food-orders-containers">
-                <h3>In Hotel reservations:</h3>
-                <p>Nakuru - Outlet</p>
-                <h3> Time:</h3>
-                <p>1st of September at 8:00 AM</p>
-                <div>
-                    <input type="submit" class="btn btn-blue btn-animated" value="Accept">
-                    <input type="submit" class="btn btn-orange-small btn-animated" value="Reject">
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="food-orders-containers">
-                <h3>In Hotel reservations:</h3>
-                <p>Nairobi - Outlet</p>
-                <h3> Time:</h3>
-                <p>3rd of September at 1:00 PM</p>
-                <div>
-                    <input type="submit" class="btn btn-blue btn-animated" value="Accept">
-                    <input type="submit" class="btn btn-orange-small btn-animated" value="Reject">
-                </div>
-            </div>
-        </div>
-        </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>

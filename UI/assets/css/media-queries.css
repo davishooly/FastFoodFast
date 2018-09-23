@@ -202,6 +202,12 @@
              width: 100%;
              padding: 0px;
          }
+         .kimame-text h1 {
+             font-size: 1rem;
+         }
+         h2 {
+             font-size: 0.8rem;
+         }
          .row-2 {
              padding: 1.5rem;
              display: block;
@@ -211,14 +217,15 @@
              text-align: center;
              transition: all 0.3s;
          }
-         .main-nav {
-             margin-top: 10px;
-         }
          .main-nav li {
              margin-right: 35px;
          }
          .main-nav li a {
              font-size: 15px;
+             margin-bottom: 40px;
+         }
+         .top {
+             height: 100%;
          }
          .meals {
              display: grid;
@@ -247,7 +254,7 @@
              width: 100%;
          }
          .order-history {
-             width: 100%;
+             font-size: 1rem;
          }
          .order__container {
              width: 100%;
@@ -324,6 +331,7 @@
          }
          .new-account {
              justify-content: start;
+             font-size: 30px;
          }
      }
      @media only screen and (max-width: 411px) {
@@ -400,6 +408,9 @@
          section {
              padding: 40px;
          }
+         header {
+             height: 12vh;
+         }
          .dashboard {
              padding: 0px;
          }
@@ -424,7 +435,7 @@
              list-style: none;
          }
          .left {
-             margin-left: 4px;
+             margin-left: 8px;
          }
          .kim {
              float: left;
@@ -469,7 +480,7 @@
          }
          .user {
              width: 100%;
-             padding: 0px;
+             padding: 20px 0px 20px 0px;
          }
          .add-food__form {
              width: 100%;
@@ -488,7 +499,7 @@
          }
          .menu-big {
              font-weight: 300;
-             margin: 2rem 0 2rem 0;
+             /* margin: 2rem 0 2rem 0; */
              font-size: 25px;
              display: flex;
              justify-content: center;

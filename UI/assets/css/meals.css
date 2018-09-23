@@ -1,9 +1,5 @@
 /* meals section */
 
-.clearfix {
-    zoom: 1;
-}
-
 .clearfix::after {
     content: '.';
     clear: both;
@@ -13,7 +9,7 @@
 }
 
 .user {
-    padding: 0px 80px 80px 80px;
+    padding: 20px 80px 80px 80px;
 }
 
 .menu-big {
@@ -23,9 +19,9 @@
     font-size: 40px;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
-    -webkit-background-clip: text;
-    color: transparent;
+    /* background-image: linear-gradient(to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
+-webkit-background-clip: text;
+color: transparent; */
 }
 
 .meals-section {
@@ -46,6 +42,7 @@
 
 .meals-user {
     list-style: none;
+    display: block;
     width: 100%;
 }
 

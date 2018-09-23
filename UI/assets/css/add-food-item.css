@@ -4,9 +4,13 @@
     background: white;
     box-shadow: 2px 2px 2px 2px rgb(116, 111, 111);
     width: 50vw;
-    height: 90vh;
+    height: 100%;
     border-radius: .5rem;
     text-align: center;
+}
+
+.add {
+    margin-bottom: 10px;
 }
 
 input {
@@ -31,9 +35,6 @@ input {
 label {
     font-weight: 400;
     word-spacing: 4px;
-    background-image: linear-gradient(to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .add {

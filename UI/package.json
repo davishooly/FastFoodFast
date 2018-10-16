@@ -1,14 +1,17 @@
 {
-  "name": "UI",
+  "name": "fasty",
   "version": "1.0.0",
   "description": "",
   "main": "webapack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch & live-server public/",
+    "watch": "webpack --watch",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "kimame",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
@@ -16,5 +19,8 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "jwt-decode": "^2.2.0"
   }
 }

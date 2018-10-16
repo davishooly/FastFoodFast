@@ -7,9 +7,9 @@
     <title>Fast-Food-Fast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href=" https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 " rel="stylesheet ">
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/grid.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/media-queries.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/media-queries.css" />
 </head>
 
 <body>
@@ -43,23 +43,20 @@
         </div>
     </section>
     <section class="section-signup">
-        <div class="new-account">
+        <!-- <div class="new-account">
             Create account
-        </div>
+        </div> -->
         <div class="row">
             <div class="login">
-                <form action="" method="POST" class="forms">
+                <form action="" method="" class="forms" id="signup_form">
                     <div>
-                        <input type="email" name="" placeholder="email@gmail.com">
+                        <input type="text" id="username" name="" placeholder="username">
                     </div>
                     <div>
-                        <input type="email" name="" placeholder="username">
+                        <input type="email" id="email" name="" placeholder="email@gmail.com">
                     </div>
                     <div>
-                        <input type="password" name="" placeholder="password">
-                    </div>
-                    <div>
-                        <input type="password" name="" placeholder="confirm password">
+                        <input type="password" id="password" name="" placeholder="password">
                     </div>
                     <div>
                         <div class="">
@@ -101,5 +98,6 @@
 
     </footer>
 </body>
+<script src="../assets/src/js/singup.js"></script>
 
 </html>

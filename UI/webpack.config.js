@@ -5,7 +5,6 @@ module.exports = {
 mode: "development",
 
 entry: {
-
     signup: './assets/src/js/signup.js',
     login: './assets/src/js/login.js',
     create_fooditem: './assets/src/js/create_fooditem.js'
@@ -13,7 +12,7 @@ entry: {
    },
    output: {
 
-       path : path.resolve(_dirname, 'assets/dist'),
+       path : path.resolve(_dirname, 'public/dist'),
        filename: '[name].bundle.js'
 
    },

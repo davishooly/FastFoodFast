@@ -3,16 +3,16 @@ const path  = require("path");
 module.exports = {
 // set mode here
 mode: "development",
-
 entry: {
-    signup: './assets/src/js/signup.js',
-    login: './assets/src/js/login.js',
-    create_fooditem: './assets/src/js/create_fooditem.js'
+    signup: './src/signup.js',
+    // login: './src/login.js',
+    // create_fooditem: './src/create_fooditem.js'
+
 
    },
    output: {
 
-       path : path.resolve(_dirname, 'public/dist'),
+       path : path.resolve(__dirname, 'public/dist'),
        filename: '[name].bundle.js'
 
    },
@@ -22,10 +22,10 @@ entry: {
             test: /\.js$/,
             exclude: /node_modules/,
             use:{
-                loader: "bable-loader",
+                loader: "babel-loader",
                 options: {
                     // babel-core && babel-preset-env gets babel setup ready to transpile
-                    presets: ["babel-presets-env"]
+                    presets: ["@babel/preset-env"   ]
                 }
             }
             }

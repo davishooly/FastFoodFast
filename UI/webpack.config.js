@@ -5,8 +5,8 @@ module.exports = {
 mode: "development",
 entry: {
     signup: './src/signup.js',
-    // login: './src/login.js',
-    // create_fooditem: './src/create_fooditem.js'
+    login: './src/login.js',
+    create_fooditem: './src/create_fooditem.js'
 
 
    },

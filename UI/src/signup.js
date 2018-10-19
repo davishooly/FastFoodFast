@@ -19,7 +19,7 @@ signup.addEventListener("submit", event => {
     email: email,
     password: password
     })
-    } )
+    })
     .then(response => response.json()) //.json() also returns a promise
     .then(data => {
          let message = data.message;
@@ -54,4 +54,4 @@ signup.addEventListener("submit", event => {
             window.location.assign("login.html");
         }
     });
-} );
+});

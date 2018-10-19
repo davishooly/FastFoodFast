@@ -142,8 +142,9 @@ a:hover {
 /* section 1 Forms */
 
 .message {
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
     text-transform: uppercase;
+    font-size: 10px;
 }
 
 .login {

@@ -27,17 +27,19 @@
         <div class="new-account">
             Add food
         </div>
-        <form action="#" class="add-food__form">
+
+        <form action="#" class="add-food__form" id="add_food">
+            <div class="created  message"></div>
             <label for="name">Food's Name</label>
-            <input type="text" id="name" placeholder="Enter food name" required>
+            <input type="text" id="name" placeholder="Enter food name">
+            <div class="message"></div>
             <label for="description">Description</label>
-            <input type="text" id="destination" placeholder="Enter food description" required>
+            <input type="text" id="description" placeholder="Enter food description">
+            <div class="desc  message"></div>
             <label>Select food image</label>
-            <input type="file" placeholder="choose image" riquired>
+            <input type="file" id="image" placeholder="choose image">
             <label>Price</label>
-            <input type="number" min="200" step="50" placeholder="Enter price" required>
-            <label for="datetime">Date and time</label>
-            <input id="datetime" type="datetime-local" placeholder="Enter date and time" required>
+            <input type="number" id="price" imin="200" step="50" placeholder="Enter price">
             <div class="add">
                 <button class="btn btn-blue btn-animated">Add food</button>
             </div>
@@ -70,6 +72,8 @@
 
         </div>
     </footer>
+    <script src="../dist/create_fooditem.bundle.js"></script>
 </body>
+
 
 </html>

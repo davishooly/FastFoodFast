@@ -6,7 +6,8 @@ mode: "development",
 entry: {
     signup: './src/signup.js',
     login: './src/login.js',
-    create_fooditem: './src/create_fooditem.js'
+    create_fooditem: './src/create_fooditem.js',
+    all_fooditems: './src/all_fooditems.js'
 
 
    },

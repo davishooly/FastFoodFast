@@ -6,9 +6,13 @@ add_food.addEventListener("submit", event => {
 
     let name = document.querySelector("#name").value;
     let description = document.querySelector("#description").value;
-    // let image = document.querySelector("#image").value;
+    let path = document.querySelector("#image").files[0].name;
     let price = document.querySelector("#price").value;
     let token = window.localStorage.getItem("token");
+
+    console.log(path);
+
+
 
     fetch("https://fasty-v2.herokuapp.com/api/v2/menu",{
         method: "POST",
@@ -20,6 +24,7 @@ add_food.addEventListener("submit", event => {
         body: JSON.stringify({
             name: name,
             description: description,
+            path:path,
             price:price
         })
     })

@@ -14,17 +14,25 @@ window.onload = function items(){
 
         let foodcontainer = document.querySelector(".meals");
 
-        food["Food Items"].forEach(fooditem=>{
+        food["Food items"].forEach(fooditem=>{
             const markup = `
+                 <li>
+                <figure class="meals-image ">
+                    <img src="../images/${fooditem.path}" alt="egg ">
+                </figure>
                 <div>
-                    <p class="new-account-small">Price. 450ksh</p>
+
+                    <p class="new-account-small">${fooditem.price}</p>
+                    <p class="new-account-small">${fooditem.date.split(" ")[0]}</p>
+                    <p class="new-account-small">${fooditem.description}</p>
                 </div>
                 <div>
                     <input type="submit" class="btn btn-blue btn-animated" value="Edit">
                     <input type="submit" class="btn btn-orange-small btn-animated" value="delete">
                 </div>
-                <div class="food_items">
-            `
+            </li>
+            `;
+            foodcontainer.insertAdjacentHTML("beforeend", markup);
         });
     } );
 }

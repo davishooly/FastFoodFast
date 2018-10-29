@@ -30,6 +30,14 @@
         <div class="new-account">
             Added food
         </div>
+        <!-- create a modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p>Deleting..</p>
+            </div>
+        </div>
         <ul class="meals clearfix ">
             <!-- <li>
                 <figure class="meals-image ">
@@ -76,5 +84,39 @@
 
 </footer>
 <script src="../dist/all_fooditems.bundle.js"></script>
+<script>
+
+    let token = window.localStorage.getItem("token");
+
+    // Get the modal
+    let modal = document.getElementById('myModal');
+    // Get the <span> element that closes the modal
+
+
+    function delete_menu(id) {
+        fetch(`https://fasty-v2.herokuapp.com/api/v2/menu/${id}`, {
+
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            }
+
+        })
+            .then(res => res.json())
+            .then(data => {
+
+                let message = data.message;
+
+                if (message === "item deleted sucessfully") {
+                    modal.style.display = "block";
+                    setTimeout((event) => {
+                        location.reload();
+                    }, 2000)
+
+                }
+            });
+    }
+</script>
 
 </html>

@@ -1,3 +1,7 @@
+@-ms-viewport {
+    width: device-width;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -23,11 +27,18 @@ body {
     font-size: 20px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Working on Headers */
 
 header {
     height: 10vh;
     width: 100%;
+    position: fixed;
     background: rgb(43, 161, 165);
 }
 
@@ -65,6 +76,14 @@ a:hover {
 .top {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/5.jpg);
     height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.top-menu {
+    background: linear-gradient(rgba(139, 133, 133, 0.6), rgba(34, 33, 33, 0.6)), url(../images/5.jpg);
+    height: 42vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -128,9 +147,7 @@ a:hover {
     font-size: 40px;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient( to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
-    -webkit-background-clip: text;
-    color: transparent;
+    color: black;
 }
 
 .new-account-small {
@@ -140,12 +157,6 @@ a:hover {
 }
 
 /* section 1 Forms */
-
-.message {
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 10px;
-}
 
 .login {
     margin-bottom: 20px;
@@ -172,7 +183,6 @@ a:hover {
 }
 
 .create-account {
-    /* border: 1px solid orange; */
     font-size: 13px;
     margin-top: -40px;
 }
@@ -236,6 +246,32 @@ input {
     color: #fff;
 }
 
+.btn-order {
+    border: 1px solid rgb(43, 161, 165);
+    background-color: rgb(43, 161, 165);
+    color: #fff;
+    width: 90%;
+    height: 50px;
+    margin-left: 20px;
+}
+
+div .enter {
+    width: 45%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(43, 161, 165);
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.btn-add-order {
+    border: 1px solid rgb(43, 161, 165);
+    background-color: rgb(43, 161, 165);
+    color: #fff;
+    width: 45%;
+    height: 50px;
+    margin-left: 20px;
+}
+
 /* section how it works */
 
 .text {
@@ -244,9 +280,6 @@ input {
     word-spacing: 4px;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient( to right bottom, rgb(30, 228, 201), rgb(7, 172, 150));
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .row-2 {
@@ -255,7 +288,6 @@ input {
     border-radius: 3px;
     height: auto;
     text-align: center;
-    transition: all 0.3s;
 }
 
 .col-4 {
@@ -264,6 +296,7 @@ input {
     width: 33.3%;
     height: 18rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
 }
 
 .col-4:hover {
@@ -275,7 +308,6 @@ input {
     margin-top: 1rem;
     text-transform: uppercase;
     font-size: 0.7rem;
-    display: inline-block;
 }
 
 .desc {
@@ -291,9 +323,13 @@ input {
 /* The footer section */
 
 #contacts {
-    height: 20vh;
+    height: 100%;
     width: 100%;
     background: rgb(43, 161, 165);
+}
+
+footer {
+    margin: auto auto 0 auto;
 }
 
 .footer-nav li {
@@ -325,4 +361,85 @@ footer p {
 .card {
     padding: 10px 20px;
     height: 300px;
+}
+
+/* implemeting modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.icon {
+    padding: 20px;
+}
+
+.icon-shopping-cart {
+    fill: orange;
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.location {
+    padding: 20px 20px 20px 0;
+    font-size: 30px;
+}
+
+/* checkout section */
+
+.checkout {
+    width: 35%;
+    height: 32rem;
+    margin: -300px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    position: fixed;
+    right: 20px;
+}
+
+.from {
+    padding: 20px;
+}
+
+.me {
+    font-size: 15px;
+    color: #888;
+}
+
+.dest {
+    font-size: 15px;
+    color: black;
 }

@@ -54,8 +54,10 @@ add_food.addEventListener("submit", event => {
                 document.querySelector(".created"). innerHTML = "Food item created successfully";
                 document.querySelector('.created').style.color= 'green';
 
+                setTimeout(()=>{
+                   location.reload();
+                }, 2000);
+
             }
-
-
         });
 });

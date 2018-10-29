@@ -1,7 +1,17 @@
+@-ms-viewport {
+    width: device-width;
+}
+
 .dashboard {
     display: flex;
     height: 100%;
     width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 aside {
@@ -72,10 +82,10 @@ aside {
 .desc_header {
     padding-bottom: 0.4rem;
     font-weight: 700;
-    background-image: linear-gradient( to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
-    -webkit-background-clip: text;
-    text-transform: uppercase;
-    color: transparent;
+    /* background-image: linear-gradient( to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+-webkit-background-clip: text;
+text-transform: uppercase;
+color: transparent; */
 }
 
 /* Working with buttons */
@@ -173,4 +183,8 @@ main {
     padding: 8px;
     font-size: 22px;
     margin-left: 1.5rem;
+}
+
+footer {
+    margin: auto auto 0 auto;
 }

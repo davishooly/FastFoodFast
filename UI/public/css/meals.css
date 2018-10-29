@@ -13,7 +13,8 @@
 }
 
 .user {
-    padding: 0px 80px 80px 80px;
+    padding: 80px 80px 80px 80px;
+    /* width: 50%; */
 }
 
 .menu-big {
@@ -51,7 +52,7 @@
 
 .meals-user li {
     width: 50%;
-    float: left;
+    /* float: left; */
 }
 
 .align {
@@ -92,6 +93,7 @@
     overflow: hidden;
     background-color: black;
     border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.2rem black;
 }
 
 .meals-image img {

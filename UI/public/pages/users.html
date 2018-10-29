@@ -32,12 +32,63 @@
             </div>
         </nav>
     </header>
+    <section class="top-menu">
+
+    </section>
     <section class="user">
+
+        <!-- create a modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closing()">&times;</span>
+                <p class="location">
+                    Tell us where you are
+                </p>
+                <form action="" class="place">
+                    <input list="cities" class="enter" placeholder="Choose town">
+                    <datalist id="cities">
+                        <option value="Nairobi">
+                        <option value="Kisumu">
+                        <option value="Mombasa">
+                        <option value="Nakuru">
+                        <option value="Eldoret">
+                    </datalist>
+                    <input type="submit" class="btn btn-add-order btn-animated" id="place-order" value="Add to order">
+                </form>
+            </div>
+        </div>
         <div class="menu-big">
             Menu of the day
         </div>
+        <div class="checkout">
+            <div class="from">
+
+                <p class="me">
+                    DESTINATION
+                </p>
+                <p class="dest">
+                    Location
+                </p>
+            </div>
+            <div class="from">
+                <p class="me orders"> your cat is empty start adding your favourite meals</p>
+            </div>
+
+            <div>
+                <form action="" class="order">
+                    <svg class="icon icon-shopping-cart">
+                        <use xlink:href="../images/symbol-defs.svg#icon-shopping-cart"></use>
+
+                    </svg>
+                    <input type="submit" class="btn btn-order btn-animated" id="place-order" value="proceed to checkout">
+                </form>
+            </div>
+
+        </div>
         <ul class="meals-user">
-            <li>
+            <!-- <li>
                 <div class="align well">
                     <div class="column-left">
                         <figure class="image-meals ">
@@ -52,136 +103,13 @@
                             <input type="submit" class="btn btn-blue btn-animated" value="place order">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-            </li>
-            <li>
-                <div class="align">
-                    <div class="column-left">
-                        <figure class="meals-image ">
-                            <img src="../images/f2.jpg " alt="pizza ">
-                        </figure>
-                    </div>
-                    <div class="column-left">
-                        <div class="margintop">
-                            <div class="margintop">
-                                <p class="new-account-small">Price. 250ksh</p>
-                                <p class="new-account-small">Well fried beef for a tasty heavy lunch served with rice
-                                    or ugali...**Free mango juice offerd to supplement the food*...*</p>
-                                <input type="submit" class="btn btn-blue btn-animated" value="place order">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="align well">
-                    <div class="column-left">
-                        <figure class="meals-image ">
-                            <img src="../images/f4.jpg" alt="Chicken breast steak with vegetables  ">
-                        </figure>
-                    </div>
-                    <div class="column-left">
-                        <div class="margintop">
-                            <p class="new-account-small">Price. 650ksh</p>
-                            <p class="new-account-small">Tasty spiced juice made from raw tomamtoes and carrots blended
-                                served before meals to create an appetite for the meals</p>
-                            <input type="submit" class="btn btn-blue" value="place order">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="align">
-                    <div class="column-left">
-                        <figure class="meals-image ">
-                            <img src="../images/f1.jpg " alt=" pumpkin soup ">
-                        </figure>
-                    </div>
-                    <div class="column-left">
-                        <div class="margintop">
-                            <p class="new-account-small">Price. 1150ksh</p>
-                            <p class="new-account-small">well cooked beef spiced with tomatoes and raw vegetables to
-                                add taste to your meal served with rice or ugali</p>
-                            <input type="submit" class="btn btn-blue btn-animated" value="place order">
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-        <ul class="meals-user clearfix ">
-            <li>
-                <div class="align well">
-                    <div class="column-left">
-                        <figure class="meals-image ">
-                            <img src="../images/f5.jpg" alt="egg ">
-                        </figure>
-                    </div>
-                    <div class="column-left">
-                        <div class="margintop">
-                            <p class="new-account-small">Price. 450ksh</p>
-                            <p class="new-account-small">chicken pieces coated with a number of spices to add
-                                crunchyness and chilliness served with fries.Yummy with Cocacola for freshness
-                            </p>
-                            <input type="submit" class="btn btn-blue btn-animated" value="place order">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="align">
-                    <div class="column-left">
-                        <figure class="meals-image ">
-                            <img src="../images/f6.jpg " alt="pizza ">
-                        </figure>
-                    </div>
-                    <div class="column-left">
-                        <div class="margintop">
-                            <p class="new-account-small">Price. 250ksh</p>
-                            <p class="new-account-small">well cooked beef spiced with tomatoes and raw vegetables to
-                                add taste to your meal served with rice or ugali</p>
-                            <input type="submit" class="btn btn-blue btn-animated" value="place order">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="align">
-                    <div class="column-left">
-                        <figure class="meals-image ">
-                            <img src="../images/f7.jpg" alt="Chicken breast steak with vegetables  ">
-                        </figure>
-                    </div>
-                    <div class="column-left">
-                        <div class="margintop">
-                            <p class="new-account-small">Price. 650ksh</p>
-                            <p class="new-account-small">rosted and deep fried chicken with chilli and other spices to
-                                add crunchyness. Can be served with rice, chips or pilau.</p>
-                            <input type="submit" class="btn btn-blue" value="place order">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="align">
-                    <div class="column-left">
-                        <figure class="meals-image ">
-                            <img src="../images/f8.jpeg" alt=" pumpkin soup ">
-                        </figure>
-                    </div>
-                    <div class="column-left">
-                        <div class="margintop">
-                            <p class="new-account-small">Price. 1150ksh</p>
-                            <p class="new-account-small">well cooked beef spiced with tomatoes and raw vegetables to
-                                add taste to your meal served with rice or ugali.</p>
-                            <input type="submit" class="btn btn-blue btn-animated" value="place order">
-                        </div>
-                    </div>
-                </div>
             </li>
         </ul>
     </section>
+
+
     <footer id="contacts">
         <div class="row-two">
             <div class="col span-1-of-2">
@@ -210,5 +138,76 @@
         </div>
     </footer>
 </body>
+<script src="../dist/user_menu.bundle.js"></script>
+
+<script>
+
+    let mode = document.querySelector("#myModal");
+
+    let span = document.querySelector(".close")[0];
+
+    const order = document.querySelector(".place");
+
+    const place = document.querySelector(".order");
+
+    const foods = JSON.parse(window.localStorage.getItem("food"));
+
+
+    const destination = [];
+    const orders_made = [];
+
+    order.addEventListener("submit", event => {
+        event.preventDefault();
+        const place = document.querySelector(".enter").value;
+        destination.push(place);
+
+        if (place) {
+            document.querySelector(".dest").innerHTML = `${place}`;
+        }
+        setTimeout(() => {
+            mode.style.display = "none";
+        }, 1000);
+
+        if (orders_made.length >= 1) {
+            document.querySelector(".orders").innerHTML = `you have ${orders_made.length} order`;
+        }
+    })
+    function add_to_cat(id) {
+        mode.style.display = "block";
+
+        for (let food of foods) {
+            if (food["id"] === id) {
+                orders_made.push(food);
+            }
+        }
+    }
+    function closing() {
+        mode.style.display = "none";
+    }
+    place.addEventListener("submit", event => {
+        event.preventDefault();
+        let id = orders_made[0].id
+        let token = window.localStorage.getItem("token");
+
+        console.log(typeof (orders_made.length))
+
+        fetch(`https://fasty-v2.herokuapp.com/api/v2/users/${id}/orders`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                destination: destination[0],
+                Quantity: orders_made.length
+            })
+        })
+            .then(data => data.json())
+            .then(data => {
+                console.log(data)
+
+            })
+    })
+</script>
 
 </html>

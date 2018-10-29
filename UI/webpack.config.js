@@ -7,7 +7,10 @@ entry: {
     signup: './src/signup.js',
     login: './src/login.js',
     create_fooditem: './src/create_fooditem.js',
-    all_fooditems: './src/all_fooditems.js'
+    all_fooditems: './src/all_fooditems.js',
+    user_menu:'./src/user_menu.js',
+    user_orders:'./src/user_orders.js',
+    place_order:'./src/place_order.js'
 
 
    },

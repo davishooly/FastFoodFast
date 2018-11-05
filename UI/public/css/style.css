@@ -406,6 +406,12 @@ footer p {
     margin-left: 150px;
 }
 
+.shopping-cart {
+    fill: orange;
+    height: 70px;
+    width: 70px;
+}
+
 .close:hover,
 .close:focus {
     color: black;
@@ -428,6 +434,11 @@ footer p {
     background-color: white;
     position: fixed;
     right: 20px;
+    display: none;
+}
+
+use:hover>.hey {
+    display: block;
 }
 
 .from {

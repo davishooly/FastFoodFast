@@ -17,18 +17,20 @@
 <body>
     <header>
         <nav>
-
+            <div class="main-nav">
+                <svg class="icon shopping-cart">
+                    <use xlink:href="../images/symbol-defs.svg#icon-shopping-cart"></use>
+                </svg>
+            </div>
             <div class="main-nav left">
                 <li>
                     <a href="../index.html ">Home</a>
                 </li>
             </div>
             <div class="main-nav">
-                <ul>
-                    <li>
-                        <a href="order-history.html">order history</a>
-                    </li>
-                </ul>
+                <li>
+                    <a href="order-history.html">order history</a>
+                </li>
             </div>
         </nav>
     </header>
@@ -83,7 +85,11 @@
 
                     </svg>
                     <input type="submit" class="btn btn-order btn-animated" id="place-order" value="proceed to checkout">
+
                 </form>
+                <div class="from">
+                    <p class="log-out dest"></p>
+                </div>
             </div>
 
         </div>
@@ -189,8 +195,6 @@
         let id = orders_made[0].id
         let token = window.localStorage.getItem("token");
 
-        console.log(typeof (orders_made.length))
-
         fetch(`https://fasty-v2.herokuapp.com/api/v2/users/${id}/orders`, {
             method: "POST",
             headers: {
@@ -204,10 +208,23 @@
         })
             .then(data => data.json())
             .then(data => {
-                console.log(data)
+
+                let message = data.msg;
+                // console.log(message)
+
+                if (message === "Token has expired") {
+                    document.getElementById("place-order").addEventListener('click', function () {
+                        textContent = "pldddd";
+                    });
+                    document.querySelector(".log-out").innerHTML = `Please login to proceed, <a class="forgot-pass" href="./login.html">Login</a>`;
+                }
 
             })
     })
+    function login() {
+        alert("please login to place order")
+
+    }
 </script>
 
 </html>

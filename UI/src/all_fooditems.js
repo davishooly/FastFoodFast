@@ -8,7 +8,8 @@ window.onload = function items(){
     })
     .then(data => data.json())
     .then(food => {
-        console.log(food);
+
+        console.log(food.message);
 
         let foodcontainer = document.querySelector(".meals");
 
@@ -32,7 +33,7 @@ window.onload = function items(){
             `;
             foodcontainer.insertAdjacentHTML("beforeend", markup);
         });
-    } );
+    });
 };
 
 

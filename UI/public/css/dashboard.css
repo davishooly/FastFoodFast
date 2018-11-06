@@ -48,7 +48,7 @@ aside {
 
 .food-orders {
     text-align: center;
-    background-image: linear-gradient( to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
     padding: 0.5rem;
     font-size: 1.3rem;
     height: 3rem;
@@ -59,7 +59,7 @@ aside {
 .food-orders-containers {
     margin: 0.7rem;
     flex: 1 1 30%;
-    background-image: linear-gradient( to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
+    background-image: linear-gradient(to right bottom, rgb(7, 172, 150), rgb(43, 161, 165));
     box-shadow: 2px 2px 2px gray;
     padding: 1rem;
     border-radius: 10px;
@@ -89,7 +89,6 @@ color: transparent; */
 }
 
 /* Working with buttons */
-
 .btn {
     text-transform: uppercase;
     text-decoration: none;
@@ -180,8 +179,8 @@ main {
 }
 
 .accept_order i {
-    padding: 8px;
-    font-size: 22px;
+    padding: 0px;
+    font-size: 19px;
     margin-left: 1.5rem;
 }
 

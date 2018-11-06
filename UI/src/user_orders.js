@@ -1,4 +1,4 @@
-const decode  = require('jwt-decode');
+
 window.onload = function items(){
 
     let token = window.localStorage.getItem("token");

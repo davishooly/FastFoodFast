@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fast-Food-Fast</title>
+    <title>Fast-Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href=" https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 " rel="stylesheet ">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
@@ -66,7 +66,6 @@
         </div>
         <div class="checkout">
             <div class="from">
-
                 <p class="me">
                     DESTINATION
                 </p>
@@ -115,7 +114,6 @@
         </ul>
     </section>
 
-
     <footer id="contacts">
         <div class="row-two">
             <div class="col span-1-of-2">
@@ -147,15 +145,10 @@
 <script src="../dist/user_menu.bundle.js"></script>
 
 <script>
-
     let mode = document.querySelector("#myModal");
-
     let span = document.querySelector(".close")[0];
-
     const order = document.querySelector(".place");
-
     const place = document.querySelector(".order");
-
     const foods = JSON.parse(window.localStorage.getItem("food"));
 
 
@@ -178,6 +171,7 @@
             document.querySelector(".orders").innerHTML = `you have ${orders_made.length} order`;
         }
     })
+
     function add_to_cat(id) {
         mode.style.display = "block";
 
@@ -187,6 +181,7 @@
             }
         }
     }
+
     function closing() {
         mode.style.display = "none";
     }
@@ -196,16 +191,16 @@
         let token = window.localStorage.getItem("token");
 
         fetch(`https://fasty-v2.herokuapp.com/api/v2/users/${id}/orders`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${token}`
-            },
-            body: JSON.stringify({
-                destination: destination[0],
-                Quantity: orders_made.length
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    destination: destination[0],
+                    Quantity: orders_made.length
+                })
             })
-        })
             .then(data => data.json())
             .then(data => {
 
@@ -216,15 +211,12 @@
                     document.getElementById("place-order").addEventListener('click', function () {
                         textContent = "pldddd";
                     });
-                    document.querySelector(".log-out").innerHTML = `Please login to proceed, <a class="forgot-pass" href="./login.html">Login</a>`;
+                    document.querySelector(".log-out").innerHTML =
+                        `Please login to proceed, <a class="forgot-pass" href="./login.html">Login</a>`;
                 }
 
             })
     })
-    function login() {
-        alert("please login to place order")
-
-    }
 </script>
 
 </html>

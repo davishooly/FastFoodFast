@@ -1,6 +1,5 @@
 
 const PAGE = PATH + "login.html";
-
 describe("login page", () => {
     let loginButton = "#login_btn",
         username_input = "#username",
@@ -18,12 +17,6 @@ describe("login page", () => {
     it("test login button click",async ()=>{
         await page.click(loginButton);
         await page.waitFor(3000);
-
-        // page evaluation
-        // await page.screenshot({
-        //     path:"test-1.png"
-        // });
-
         let return_value = await page.evaluate(()=>{
                let doc = document.querySelector(".message").innerHTML;
                return doc === "enter valid username, username does not exist";
@@ -31,6 +24,21 @@ describe("login page", () => {
         expect(return_value).toBe(true);
     });
 
+    it("test login with incorrect password", async () =>{
+
+        await page.type(username_input, user.username);
+        await page.type(userpassword_input, "Kimame3435");
+
+        await page.click(loginButton);
+        await page.waitFor(3000);
+
+        let return_value = await page.evaluate(()=>{
+            let doc = document.querySelector(".message").innerHTML;
+            return doc === "enter correct password";
+        })
+        expect(return_value).toBe(true);
+        await page.reload(100);
+    });
 
     it("test login with valid details", async() =>{
 
@@ -41,13 +49,7 @@ describe("login page", () => {
 
         await page.waitFor(3000);
 
-        // await page.screenshot({
-        //     path:"test-2.png"
-        // })
-
         const menuTitle = await page.title();
-
         expect(menuTitle).toBe("Fast-Menu");
-
     });
 })

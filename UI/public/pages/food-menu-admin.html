@@ -51,6 +51,10 @@
                     <input type="submit" class="btn btn-orange-small btn-animated" value="delete">
                 </div>
             </li> -->
+        </ul>
+        <div class="pagination">
+
+        </div>
     </section>
 </body>
 
@@ -85,7 +89,6 @@
 </footer>
 <script src="../dist/all_fooditems.bundle.js"></script>
 <script>
-
     let token = window.localStorage.getItem("token");
 
     // Get the modal
@@ -96,13 +99,13 @@
     function delete_menu(id) {
         fetch(`https://fasty-v2.herokuapp.com/api/v2/menu/${id}`, {
 
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
-            }
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`
+                }
 
-        })
+            })
             .then(res => res.json())
             .then(data => {
 

@@ -456,3 +456,21 @@ use:hover>.hey {
     font-size: 15px;
     color: black;
 }
+
+/* pagination */
+#btn_pagination {
+    float: right;
+    margin-top: 50px;
+    padding: 12px;
+    margin-left: 5px;
+}
+
+#btn_pagination:hover {
+    background-color: rgb(43, 161, 165);
+    color: white;
+}
+
+.pagination .active {
+    background-color: rgb(43, 161, 165);
+    color: white;
+}

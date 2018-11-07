@@ -9,11 +9,25 @@ window.onload = function items(){
     .then(data => data.json())
     .then(food => {
 
-        console.log(food.message);
 
         let foodcontainer = document.querySelector(".meals");
+        let buttonContainer = document.querySelector(".pagination");
 
-        food["Food items"].forEach(fooditem=>{
+        let four = [];
+
+        let four_foods = food["Food items"].slice(0,4);
+        four.push(four_foods);
+
+        let second_four = [];
+        console.log(four);
+
+        for (let i in four_foods){
+            i = parseInt(i);
+                const btn = `<button id="btn_pagination">${i+1}</button>`;
+                buttonContainer.insertAdjacentHTML("afterend", btn);
+
+        }
+        four_foods.forEach(fooditem=>{
             const markup = `
                  <li>
                 <figure class="meals-image ">

@@ -24,7 +24,6 @@ describe("sign_up page",() => {
         await page.click(signup_button);
         await page.waitFor(3000);
 
-
            let return_value = await page.evaluate(()=>{
             let doc = document.querySelector(".message").innerHTML;
             return doc === "username must be a string";
@@ -71,10 +70,6 @@ describe("sign_up page",() => {
             await page.type(password, user.password)
             await page.click(signup_button);
             await page.waitFor(3000);
-
-            await  page.screenshot({
-                path:"test-3.png"
-            })
 
            let return_value = await page.evaluate(()=>{
             let doc = document.querySelector(".message").innerHTML;

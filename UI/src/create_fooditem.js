@@ -10,10 +10,6 @@ add_food.addEventListener("submit", event => {
     let price = document.querySelector("#price").value;
     let token = window.localStorage.getItem("token");
 
-    console.log(path);
-
-
-
     fetch("https://fasty-v2.herokuapp.com/api/v2/menu",{
         method: "POST",
         headers: {
@@ -33,27 +29,21 @@ add_food.addEventListener("submit", event => {
             console.log(data);
 
             let message = data.message;
-
             if( message === "foodname must be a string"){
                 document.querySelector('.message').innerHTML = "Enter valid food name";
                 document.querySelector('.message').style.color= 'red';
             }
-
             if (message === "description must contain alphanumeric characters only"){
                 document.querySelector(".desc"). innerHTML = "description must contain alphanumeric characters only";
                 document.querySelector('.desc').style.color= 'red';
             }
-
             if(message === "food item already exists"){
                 document.querySelector(".created"). innerHTML = "foodname already exists";
                 document.querySelector('.created').style.color= 'red';
-
             }
-
             if( message === "Food item created successfully"){
                 document.querySelector(".created"). innerHTML = "Food item created successfully";
                 document.querySelector('.created').style.color= 'green';
-
                 setTimeout(()=>{
                    location.reload();
                 }, 2000);

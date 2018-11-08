@@ -9,25 +9,19 @@ window.onload = function items(){
     .then(data => data.json())
     .then(food => {
 
-
         let foodcontainer = document.querySelector(".meals");
         let buttonContainer = document.querySelector(".pagination");
 
-        let four = [];
+        let default_menu = food["Food items"].slice(0,4);
 
-        let four_foods = food["Food items"].slice(0,4);
-        four.push(four_foods);
-
-        let second_four = [];
-        console.log(four);
-
-        for (let i in four_foods){
+        for (let i =0; i<(food["Food items"].length/4)-1; i++){
             i = parseInt(i);
-                const btn = `<button id="btn_pagination">${i+1}</button>`;
+            if(food["Food items"].length>4){
+                const btn = `<button onclick="getPage(${i+1})" id="btn_pagination">${i+1}</button>`;
                 buttonContainer.insertAdjacentHTML("afterend", btn);
-
+            }
         }
-        four_foods.forEach(fooditem=>{
+        default_menu.forEach(fooditem=>{
             const markup = `
                  <li>
                 <figure class="meals-image ">
@@ -49,6 +43,8 @@ window.onload = function items(){
         });
     });
 };
+
+
 
 
 

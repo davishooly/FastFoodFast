@@ -31,13 +31,6 @@
             Added food
         </div>
         <!-- create a modal -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <p>Deleting..</p>
-            </div>
-        </div>
         <ul class="meals clearfix ">
             <!-- <li>
                 <figure class="meals-image ">
@@ -90,35 +83,63 @@
 <script src="../dist/all_fooditems.bundle.js"></script>
 <script>
     let token = window.localStorage.getItem("token");
+    const foods = JSON.parse(window.localStorage.getItem("food"));
+    let foodcontainer = document.querySelector(".meals");
 
-    // Get the modal
-    let modal = document.getElementById('myModal');
-    // Get the <span> element that closes the modal
+    function getPage(max) {
+        let maxitem = max * 4;
+        let min_item = maxitem - 4;
 
+        document.querySelector(".meals").innerHTML = "";
+
+        for (let i = min_item; i < maxitem; i++) {
+            const markup =
+                `
+              <li>
+             <figure class="meals-image ">
+              <img src="../images/${foods[i].path}" alt="egg ">
+                </figure>
+                  <div>
+               <p class="new-account-small">${foods[i].name}</p>
+               <p class="new-account-small">$${foods[i].price}</p>
+               <p class="new-account-small">${foods[i].date.split(" ")[0]}</p>
+               <p class="new-account-small">${foods[i].description}</p>
+               </div>
+             <div>
+             <input type="submit" class="btn btn-blue btn-animated" value="Edit">
+              <input type="submit" class="btn btn-orange-small btn-animated" onclick="delete_menu(${foods[i].id})" value="delete">
+           </div>
+             </li>
+           `;
+            foodcontainer.insertAdjacentHTML("beforeend", markup);
+        }
+    }
 
     function delete_menu(id) {
-        fetch(`https://fasty-v2.herokuapp.com/api/v2/menu/${id}`, {
+        let c = confirm("confirm deletion");
+        if (c) {
+            fetch(`https://fasty-v2.herokuapp.com/api/v2/menu/${id}`, {
 
-                method: "DELETE",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${token}`
-                }
+                    method: "DELETE",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}`
+                    }
 
-            })
-            .then(res => res.json())
-            .then(data => {
+                })
+                .then(res => res.json())
+                .then(data => {
 
-                let message = data.message;
+                    let message = data.message;
 
-                if (message === "item deleted sucessfully") {
-                    modal.style.display = "block";
-                    setTimeout((event) => {
-                        location.reload();
-                    }, 2000)
+                    if (message === "item deleted sucessfully") {
+                        setTimeout((event) => {
+                            location.reload();
+                        }, 2000)
 
-                }
-            });
+                    }
+                });
+        }
     }
 </script>
 

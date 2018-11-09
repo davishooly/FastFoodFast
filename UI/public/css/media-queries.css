@@ -2,16 +2,20 @@
      #contacts {
          height: 28vh;
      }
+
      body {
          width: 100%;
      }
+
      .add-food__form {
          height: 100%;
      }
+
      footer p,
      a {
          font-size: 24px;
      }
+
      .row-2 {
          padding: 4rem;
          border-radius: 3px;
@@ -19,17 +23,21 @@
          text-align: center;
          transition: all 0.3s;
      }
+
      .col-4 {
          width: 100%;
          padding: 1rem;
          margin-bottom: 3rem;
      }
+
      #contacts {
          display: block;
      }
+
      .history__container {
          padding: 2rem;
      }
+
      .margintop {
          margin-top: 0px;
      }
@@ -39,26 +47,33 @@
      .well {
          height: 150px;
      }
+
      #contacts {
          height: 25vh;
      }
+
      .add {
          margin-bottom: 10px;
      }
+
      .add-food__form {
          height: 100%;
          width: 100%;
          left: 0px;
      }
+
      .main-nav {
          margin-top: 30px;
      }
+
      .main-nav i {
          font-size: 35px;
      }
+
      .history__container {
          width: 100%;
      }
+
      .row-2 {
          padding: 4rem;
          border-radius: 3px;
@@ -67,6 +82,7 @@
          text-align: center;
          transition: all 0.3s;
      }
+
      .col-4 {
          width: 100%;
          padding: 1rem;
@@ -80,30 +96,38 @@
      .row-2 {
          width: 100%;
      }
+
      #contacts {
          height: 27.5vh;
      }
+
      .add-food__form {
          width: 100%;
          left: 0px;
      }
+
      body {
          width: 100%;
      }
+
      #contacts {
          width: 100%;
      }
+
      .margintop {
          margin-top: 0px;
      }
+
      .history__container {
          width: 100%;
      }
+
      .col-4 {
          width: 100%;
          padding: 2rem;
          margin-bottom: 3rem;
      }
+
      .row-2 {
          padding: 1.5rem;
          display: block;
@@ -121,25 +145,31 @@
      #contacts {
          height: 100%;
      }
+
      .history__container {
          width: 100%;
      }
+
      .user {
          width: 100%;
          padding: 0px;
      }
+
      .col-4 {
          width: 100%;
          padding: 1.5rem;
          margin-bottom: 3rem;
      }
+
      .meals-user {
          display: flex;
          flex-direction: column;
      }
+
      .meals-user li {
          width: 100%;
      }
+
      .row-2 {
          padding: 1.5rem;
          display: block;
@@ -149,65 +179,83 @@
          text-align: center;
          transition: all 0.3s;
      }
+
      .main-nav {
          margin-top: 10px;
      }
+
      .main-nav li {
          margin-right: 35px;
      }
+
      .main-nav li a {
          font-size: 15px;
      }
+
      /* for small phones*/
      @media only screen and (max-width: 480px) {
          .history__container {
              width: 100%;
          }
+
          .add-food__form {
              width: 100%;
          }
+
          .add {
              margin-bottom: 8px;
          }
+
          .meals-user {
              display: flex;
              flex-direction: column;
          }
+
          .meals-user li {
              width: 100%;
          }
+
          .user {
              padding: 0px;
          }
+
          body {
              width: 100%;
          }
+
          #contacts {
              width: 100%;
          }
+
          .desc p {
              font-size: 0.8rem;
              font-weight: 300;
          }
+
          footer p,
          a {
              font-size: 24px;
          }
+
          .col-4 {
              width: 100%;
              padding: 2rem;
              margin-bottom: 3rem;
          }
+
          .how-it-works {
              width: 100%;
              padding: 0px;
          }
+
          .kimame-text h1 {
              font-size: 1rem;
          }
+
          h2 {
              font-size: 0.8rem;
          }
+
          .row-2 {
              padding: 1.5rem;
              display: block;
@@ -217,260 +265,335 @@
              text-align: center;
              transition: all 0.3s;
          }
+
          .main-nav li {
              margin-right: 35px;
          }
+
          .main-nav li a {
              font-size: 15px;
              margin-bottom: 40px;
          }
+
          .top {
              height: 100%;
          }
+
          .meals {
              display: grid;
          }
+
          .meals li {
              width: 100%;
          }
+
          .align {
              margin: 0px 0px 10px 0px;
          }
      }
+
      @media only screen and (max-width: 414px) {
          body {
              width: 100%;
          }
+
          .navigation {
              width: 0px;
          }
+
          .left {
              margin-left: 4px;
          }
+
          .kim {
              float: left;
          }
+
          .rows {
              width: 100%;
          }
+
          .order-history {
              font-size: 1rem;
          }
+
          .order__container {
              width: 100%;
              padding: 0px;
          }
+
          .btn-orange {
              width: 7rem;
          }
+
          .btn-blue {
              width: 7rem;
              height: 2rem;
          }
+
          .meals-user {
              display: flex;
              flex-direction: column;
          }
+
          .meals-user li {
              width: 100%;
          }
+
          .align {
              display: inline-block;
          }
+
          .add {
              margin-bottom: 10px;
          }
+
          .food__item {
              margin: 1rem .2rem 1rem 1rem;
          }
+
          .dashboard__content {
              width: 100%;
              padding: 0px;
          }
+
          .history__container {
              padding: .5rem;
              margin-right: 5px;
          }
+
          .history__item {
              margin: 0px;
              padding: 2px;
          }
+
          .add-food__form {
              width: 100%;
              left: 0px;
          }
+
          .row-two {
              display: grid;
          }
+
          .row-two p {
              margin-bottom: 5px;
          }
+
          .footer-nav li {
              margin-top: 10px;
              float: left;
              list-style: none;
          }
+
          footer p,
          a {
              font-size: 14px;
          }
+
          .span-1-of-2 {
              width: 100%;
          }
+
          .section-signup {
              padding: 20px;
          }
+
          .main-nav {
              margin-top: 10px;
          }
+
          .main-nav li {
              margin-right: 35px;
          }
+
          .main-nav li a {
              font-size: 15px;
          }
+
          .new-account {
              justify-content: start;
              font-size: 30px;
          }
      }
+
      @media only screen and (max-width: 411px) {
          body {
              width: 100%;
          }
+
          .main-nav {
              margin-top: 10px;
          }
+
          .main-nav li {
              margin-right: 50px;
          }
+
          .main-nav li a {
              font-size: 15px;
          }
+
          .left {
              margin-left: 4px;
          }
+
          .kim {
              float: left;
          }
+
          .text {
              margin-top: 20px;
          }
+
          .rows {
              width: 100%;
          }
+
          .order-history {
              width: 100%;
          }
+
          .new-account {
              justify-content: start;
          }
+
          .dashboard__content {
              width: 100%;
          }
+
          .row-two {
              display: grid;
          }
+
          .row-two p {
              margin-bottom: 5px;
          }
+
          .footer-nav li {
              margin-top: 10px;
              float: left;
              list-style: none;
          }
+
          footer p,
          a {
              font-size: 14px;
          }
+
          .span-1-of-2 {
              width: 100%;
          }
+
          .user {
              padding: 0px;
          }
+
          .history__container {
              padding: .5rem;
              margin-right: 5px;
          }
+
          .history__item {
              margin: 0px;
              padding: 2px;
          }
      }
+
      @media only screen and (max-width: 375px) {
          .add-food__form {
              left: 0vh;
          }
+
          body {
              height: 100%;
          }
+
          section {
              padding: 40px;
          }
+
          header {
              height: 14vh;
          }
+
          .dashboard {
              padding: 0px;
          }
+
          .text {
              margin-top: 20px;
          }
+
          .create-account p a {
              font-size: 20px;
          }
+
          .row-two {
              display: grid;
          }
+
          .row-two p {
              margin-bottom: 5px;
          }
+
          .span-1-of-2 {
              width: 100%;
          }
+
          .footer-nav li {
              margin-top: 10px;
              float: left;
              list-style: none;
          }
+
          .left {
              margin-left: 8px;
          }
+
          .kim {
              float: left;
          }
+
          .reminder {
              display: flex;
              flex-direction: column;
              align-content: flex-start;
          }
+
          .reminder a {
              font-size: 15px;
              margin-top: 20px;
              margin-left: 10px;
          }
+
          .desc p {
              font-size: 0.8rem;
              font-weight: 300;
          }
+
          .history__container {
              width: 100%;
          }
+
          .history__item {
              padding: 0px;
          }
+
          #contacts {
              width: 100%;
          }
+
          footer p,
          a {
              font-size: 14px;
          }
+
          .col-4 {
              padding: 2rem;
              margin-bottom: 3rem;
          }
+
          .row-2 {
              display: block;
              border-radius: 3px;
@@ -478,25 +601,32 @@
              text-align: center;
              transition: all 0.3s;
          }
+
          .user {
              width: 100%;
              padding: 20px 0px 20px 0px;
          }
+
          .add-food__form {
              width: 100%;
          }
+
          .margintop {
              margin-top: 0px;
          }
+
          .main-nav {
              margin-top: 10px;
          }
+
          .main-nav li {
              margin-right: 35px;
          }
+
          .main-nav li a {
              font-size: 15px;
          }
+
          .menu-big {
              font-weight: 300;
              /* margin: 2rem 0 2rem 0; */
@@ -505,41 +635,51 @@
              justify-content: center;
          }
      }
+
      @media only screen and (max-width: 320px) {
          .col-4 {
              padding: 1rem;
              margin-bottom: 3rem;
          }
+
          .main-nav {
              margin-top: 10px;
          }
+
          .main-nav li {
              margin-right: 35px;
          }
+
          .main-nav li a {
              font-size: 15px;
          }
+
          .left {
              margin-left: 4px;
          }
+
          .kim {
              float: left;
          }
      }
+
      @media only screen and (max-width: 300px) {
          #contacts {
              height: 42vh;
              width: 100%;
          }
+
          .history__container {
              width: 100%;
          }
+
          .add-food__form {
              left: 0vh;
          }
+
          .user {
              width: 100%;
              padding: 0px;
          }
      }
- }  
+ }

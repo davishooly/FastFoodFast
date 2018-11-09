@@ -9,12 +9,14 @@ window.onload = function items(){
     .then(data => data.json())
     .then(food => {
 
+        console.log(food)
+
         let foodcontainer = document.querySelector(".meals");
         let buttonContainer = document.querySelector(".pagination");
 
         let default_menu = food["Food items"].slice(0,4);
 
-        for (let i =0; i<(food["Food items"].length/4)-1; i++){
+        for (let i =0; i<(food["Food items"].length/4); i++){
             i = parseInt(i);
             if(food["Food items"].length>4){
                 const btn = `<button onclick="getPage(${i+1})" id="btn_pagination">${i+1}</button>`;
@@ -29,7 +31,7 @@ window.onload = function items(){
                 </figure>
                 <div>
                     <p class="new-account-small">${fooditem.name}</p>
-                    <p class="new-account-small">${fooditem.price}</p>
+                    <p class="new-account-small">${fooditem.price}.Kshs</p>
                     <p class="new-account-small">${fooditem.date.split(" ")[0]}</p>
                     <p class="new-account-small">${fooditem.description}</p>
                 </div>

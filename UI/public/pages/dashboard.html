@@ -42,7 +42,6 @@
                 </div>
             </div>
         </aside>
-
         <main>
             <header>
                 <nav>
@@ -76,15 +75,67 @@
                             <div class="history__item desc_header ">Date</div>
                             <div class="history__item desc_header ">Delivery location</div>
                             <div class="history__item desc_header ">ordered by</div>
+                            <div class="history__item desc_header ">status</div>
                             <div class="history__item desc_header ">Accept/reject</div>
                         </div>
                     </div>
+                    <div class="pagination">
 
+                    </div>
                 </div>
             </section>
         </main>
     </div>
 </body>
 <script src="../dist/all_orders.bundle.js"></script>
+<script>
+    let token = window.localStorage.getItem("token");
+
+    function accept_order(id) {
+        let c = confirm("confirm accept order")
+        if (c) {
+            fetch(`https://fasty-v2.herokuapp.com/api/v2/orders/${id}/accept`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${token}`
+                    }
+                }).then(data => data.json())
+                .then(data => {
+                    let message = data.message;
+
+                    if (message === "order accepted sucessfully") {
+                        setTimeout(() => {
+                                location.reload();
+                            },
+                            100)
+                    }
+                })
+        }
+    }
+
+    function decline_order(id) {
+        let c = confirm("confirm decline order")
+        if (c) {
+            fetch(`https://fasty-v2.herokuapp.com/api/v2/orders/${id}/reject`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${token}`
+                    }
+                }).then(data => data.json())
+                .then(data => {
+                    let message = data.messge;
+                    console.log(data);
+                    if (message === "order rejected sucessfully") {
+                        setTimeout(() => {
+                                location.reload();
+                            },
+                            100)
+                    }
+                })
+        }
+    }
+</script>
 
 </html>

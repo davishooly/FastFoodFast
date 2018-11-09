@@ -18,9 +18,39 @@
     <header>
         <nav>
             <div class="main-nav">
-                <svg class="icon shopping-cart">
-                    <use xlink:href="../images/symbol-defs.svg#icon-shopping-cart"></use>
-                </svg>
+                <div class="dropdown">
+                    <svg class="icon shopping-cart">
+                        <use xlink:href="../images/symbol-defs.svg#icon-shopping-cart"></use>
+                    </svg>
+                    <div class="checkout">
+                        <div class="from">
+                            <p class="me">
+                                DESTINATION
+                            </p>
+                            <p class="dest">
+                                Location
+                            </p>
+                        </div>
+                        <div class="from">
+                            <p class="me orders"> your cat is empty start adding your favourite meals</p>
+                        </div>
+
+                        <div>
+                            <form action="" class="order">
+                                <svg class="icon icon-shopping-cart">
+                                    <use xlink:href="../images/symbol-defs.svg#icon-shopping-cart"></use>
+
+                                </svg>
+                                <input type="submit" class="btn btn-order btn-animated" id="place-order" value="proceed to checkout">
+
+                            </form>
+                            <div class="from">
+                                <p class="log-out dest"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="main-nav left">
                 <li>
@@ -64,34 +94,7 @@
         <div class="menu-big">
             Menu of the day
         </div>
-        <div class="checkout">
-            <div class="from">
-                <p class="me">
-                    DESTINATION
-                </p>
-                <p class="dest">
-                    Location
-                </p>
-            </div>
-            <div class="from">
-                <p class="me orders"> your cat is empty start adding your favourite meals</p>
-            </div>
 
-            <div>
-                <form action="" class="order">
-                    <svg class="icon icon-shopping-cart">
-                        <use xlink:href="../images/symbol-defs.svg#icon-shopping-cart"></use>
-
-                    </svg>
-                    <input type="submit" class="btn btn-order btn-animated" id="place-order" value="proceed to checkout">
-
-                </form>
-                <div class="from">
-                    <p class="log-out dest"></p>
-                </div>
-            </div>
-
-        </div>
         <ul class="meals-user">
             <!-- <li>
                 <div class="align well">
@@ -205,7 +208,8 @@
             .then(data => {
 
                 let message = data.msg;
-                // console.log(message)
+
+                let order_placed = data.message;
 
                 if (message === "Token has expired") {
                     document.getElementById("place-order").addEventListener('click', function () {
@@ -213,6 +217,13 @@
                     });
                     document.querySelector(".log-out").innerHTML =
                         `Please login to proceed, <a class="forgot-pass" href="./login.html">Login</a>`;
+                }
+
+                if (order_placed === "Order placed successfully") {
+                    alert("order placed sucessfully");
+                    setTimeout(() => {
+                        location.reload();
+                    }, 100)
                 }
 
             })

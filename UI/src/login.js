@@ -2,7 +2,6 @@
 const decoded = require("jwt-decode");
 const login =  document.querySelector("#login_form");
 
-
 // first i have to listen for an event§§
 login.addEventListener("submit", event => {
     event.preventDefault();

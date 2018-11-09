@@ -11,7 +11,8 @@ entry: {
     user_menu:'./src/user_menu.js',
     user_orders:'./src/user_orders.js',
     place_order:'./src/place_order.js',
-    all_orders: './src/all_orders.js'
+    all_orders: './src/all_orders.js',
+    accept_order:'./src/accept_order'
    },
    output: {
        path : path.resolve(__dirname, 'public/dist'),

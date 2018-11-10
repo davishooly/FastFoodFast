@@ -2,7 +2,7 @@
 const decoded = require("jwt-decode");
 const login =  document.querySelector("#login_form");
 
-// first i have to listen for an event§§
+// first i have to listen for an event
 login.addEventListener("submit", event => {
     event.preventDefault();
 
@@ -45,8 +45,8 @@ login.addEventListener("submit", event => {
                 window.localStorage.setItem("token", token);
                 document.querySelector(".message").innerHTML = "successfully logged in";
                 document.querySelector(".message").style.color= "green";
+                // decode token to an object
                 let role = decoded(token).identity.is_admin;
-
                 if(role){
                     window.location.assign("dashboard.html");
                 }

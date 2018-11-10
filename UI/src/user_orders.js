@@ -1,6 +1,4 @@
-
 window.onload = function items(){
-
     let token = window.localStorage.getItem("token");
 
     fetch("https://fasty-v2.herokuapp.com/api/v2/users/orders",{
@@ -13,8 +11,6 @@ window.onload = function items(){
     })
     .then(data => data.json())
     .then(orders => {
-
-        console.log(orders)
 
         let order_container = document.querySelector(".dig");
 

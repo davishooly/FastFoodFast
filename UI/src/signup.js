@@ -51,6 +51,7 @@ signup.addEventListener("submit", event => {
         if (data.message === `user ${username} created successfully`){
             document.querySelector(".message").innerHTML = `Account for ${username} created sucessfully`;
             document.querySelector(".message").style.color = 'green';
+            // redirecting to login page
             window.location.assign("login.html");
         }
     });

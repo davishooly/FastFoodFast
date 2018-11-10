@@ -1,5 +1,4 @@
 window.onload = function items(){
-
     fetch("https://fasty-v2.herokuapp.com/api/v2/menu",{
         method: "GET",
         headers : {
@@ -8,9 +7,6 @@ window.onload = function items(){
     })
     .then(data => data.json())
     .then(food => {
-
-        console.log(food)
-
         let foodcontainer = document.querySelector(".meals");
         let buttonContainer = document.querySelector(".pagination");
 

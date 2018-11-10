@@ -1,6 +1,4 @@
-
 const PAGE = PATH + "add-food.html";
-
 describe("test add food item", ()=>{
     let addfood_button = ("#food_button"),
         food_name = ("#name"),

@@ -79,9 +79,9 @@
                             <div class="history__item desc_header ">Accept/reject</div>
                         </div>
                     </div>
-                    <div class="pagination">
+                </div>
+                <div class="pagination">
 
-                    </div>
                 </div>
             </section>
         </main>
@@ -90,6 +90,8 @@
 <script src="../dist/all_orders.bundle.js"></script>
 <script>
     let token = window.localStorage.getItem("token");
+    let orders = JSON.parse(window.localStorage.getItem("orders"))
+    let order_container = document.querySelector(".all");
 
     function accept_order(id) {
         let c = confirm("confirm accept order")
@@ -134,6 +136,33 @@
                             100)
                     }
                 })
+        }
+    }
+
+    function getPage(max) {
+        let maxitem = max * 10;
+        let min_item = maxitem - 10;
+        document.querySelector(".all").innerHTML = "";
+
+        for (let i = min_item; i < maxitem; i++) {
+            const order =
+                `
+                <div class="rows">
+                <div class="history__item desc_header">${orders[i].id}</div>
+                <div class="history__item desc_header">${orders[i].name}</div>
+                <div class="history__item desc_header">${orders[i].Quanity}</div>
+                <div class="history__item desc_header ">${orders[i].date.split(" ")[0]}</div>
+                <div class="history__item desc_header ">${orders[i].destination}</div>
+                <div class="history__item desc_header ">${orders[i].orderd_by}</div>
+                <div class="history__item desc_header ">${orders[i].status}</div>
+                <div class="history__item">
+                <div class="accept_order">
+                <i class="fa fa-check-circle btn-accept" onclick="accept_order(${orders[i].id})"></i>
+                <i class="fa fa-times-circle btn-reject" onclick="decline_order(${orders[i].id})"></i>
+               </div>
+               </div>
+                `;
+            order_container.insertAdjacentHTML("beforeend", order);
         }
     }
 </script>

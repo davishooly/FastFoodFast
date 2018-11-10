@@ -1,5 +1,4 @@
 window.onload = function items(){
-    let token = window.localStorage.getItem("token");
 
     fetch("https://fasty-v2.herokuapp.com/api/v2/menu",{
         method: "GET",
@@ -9,9 +8,8 @@ window.onload = function items(){
     })
     .then(data => data.json())
     .then(food => {
-
+        // store food items to local storage
         window.localStorage.setItem("food", JSON.stringify(food["Food items"]));
-
         let foodcontainer = document.querySelector(".meals-user");
 
         food["Food items"].forEach(fooditem=>{

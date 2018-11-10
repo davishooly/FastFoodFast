@@ -26,8 +26,6 @@ add_food.addEventListener("submit", event => {
     })
     .then(response => response.json())
     .then(data =>{
-            console.log(data);
-
             let message = data.message;
             if( message === "foodname must be a string"){
                 document.querySelector('.message').innerHTML = "Enter valid food name";
@@ -47,7 +45,6 @@ add_food.addEventListener("submit", event => {
                 setTimeout(()=>{
                    location.reload();
                 }, 2000);
-
             }
         });
 });

@@ -11,12 +11,13 @@ window.onload = function orders() {
     }).then(data => data.json())
     .then(data => {
 
-        console.log(data["message"].length)
+        let first_ten = data["message"].slice(0,10);
+        window.localStorage.setItem("orders",JSON.stringify(data["message"]))
 
         let buttonContainer = document.querySelector(".pagination");
-        for(let i = 0; i<data["message"].length/8;i++){
+        for(let i = 0; i<data["message"].length/10;i++){
             i = parseInt(i);
-            if(data["message"].length > 8){
+            if(data["message"].length > 10){
                 const btn = `<button onclick="getPage(${i+1})" id="btn_pagination">${i+1}</button>`;
                 buttonContainer.insertAdjacentHTML("afterend", btn);
             }
@@ -24,7 +25,7 @@ window.onload = function orders() {
 
         let order_container = document.querySelector(".all");
 
-        data["message"].forEach(element => {
+        first_ten.forEach(element => {
             const order = `
             <div class="rows">
                             <div class="history__item desc_header">${element.id}</div>

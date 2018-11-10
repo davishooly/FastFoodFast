@@ -189,11 +189,24 @@ footer {
 }
 
 /* pagination */
+.pagination {
+    text-align: center;
+    border: 10px;
+}
+
 #btn_pagination {
-    float: right;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 12px;
     margin-left: 5px;
+    border-radius: 7px;
+    background-color: teal;
+    color: #fff;
+    outline: none;
+}
+
+#btn_pagination :active {
+    background-color: rgb(43, 161, 165);
+
 }
 
 #btn_pagination:hover {

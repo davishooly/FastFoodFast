@@ -19,7 +19,7 @@ window.onload = function orders() {
             i = parseInt(i);
             if(data["message"].length > 10){
                 const btn = `<button onclick="getPage(${i+1})" id="btn_pagination">${i+1}</button>`;
-                buttonContainer.insertAdjacentHTML("afterend", btn);
+                buttonContainer.insertAdjacentHTML("beforeend", btn);
             }
         }
 

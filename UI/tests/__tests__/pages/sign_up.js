@@ -1,13 +1,10 @@
-
 const PAGE = PATH + "signup.html";
 describe("sign_up page",() => {
 
      let signup_button = "#sign_up",
          username = "#username",
          email = "#email",
-         password = "#password";
-
-         user={
+         password = "#password";         user={
              name:"kims",
              email:"dryspell@gmail.com",
              password:"Dryspell123"
@@ -20,7 +17,6 @@ describe("sign_up page",() => {
         } );
 
         it("test singup", async () =>{
-
         await page.click(signup_button);
         await page.waitFor(3000);
 
